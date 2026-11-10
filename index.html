@@ -3,124 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JULSON AUTO - Vente de Voitures à Goma</title>
+<title>JULSON AUTO - Vente Voitures Butembo</title>
 <style>
-  *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-  body{background:#f2f2f2;color:#111}
-  header{background:#111;color:#fff;padding:20px;text-align:center}
-  header h1{font-size:32px;color:#ffcc00}
-  header p{margin-top:5px;color:#ddd}
-  .info{background:#ffcc00;text-align:center;padding:12px;font-weight:bold}
-  .galerie{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;padding:20px;max-width:1100px;margin:auto}
-  .carte{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.15)}
-  .carte img{width:100%;height:220px;object-fit:cover;display:block;cursor:pointer}
-  .carte img:hover{opacity:.85}
-  .texte{padding:15px}
-  .texte h3{font-size:20px;margin-bottom:5px}
-  .texte p{color:#555;font-size:14px}
-  .prix{color:#e60000;font-weight:bold;font-size:20px;margin-top:8px}
-  .clique{text-align:center;font-size:13px;color:#888;padding:0 15px 15px}
-  footer{background:#111;color:#fff;text-align:center;padding:20px;margin-top:20px}
-  .btn{display:inline-block;background:#25D366;color:#fff;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:10px}
+body { font-family: Arial; margin: 0; background: #f2f2f2; }
+header { background: #000; color: white; text-align: center; padding: 40px 15px; border-bottom: 5px solid #ffcc00; }
+header h1 { color: #ffcc00; margin: 0; font-size: 40px; }
+.container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+.car { background: white; width: 320px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px #ccc; text-align: center; padding-bottom: 15px; }
+.car img { width: 100%; height: 200px; object-fit: cover; cursor: pointer; }
+.car h2 { margin: 10px 0 5px; }
+.car p { color: green; font-weight: bold; font-size: 18px; }
+footer { background: #000; color: white; text-align: center; padding: 20px; }
+/* Image agrandie */
+.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 999; justify-content: center; align-items: center; }
+.modal img { width: 90%; max-width: 800px; border-radius: 10px; }
+.close-btn { position: absolute; top: 15px; right: 25px; color: white; font-size: 45px; cursor: pointer; }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>JULSON AUTO</h1>
-  <p>Les meilleures voitures à Goma - Nord-Kivu</p>
+<h1>🚗 JULSON AUTO</h1>
+<p>Vente de Voitures de Qualité à BUTEMBO - RDC</p>
+<p>Par MUMBERE VASWAGHA JULSON - L3 IAGE</p>
 </header>
 
-<div class="info">👉 Clique sur une photo pour la voir en GRAND dans un nouvel onglet</div>
-
-<div class="galerie">
-
-  <!-- VOITURE 1 : Change juste le lien ici -->
-  <div class="carte">
-    <a href="https://res.cloudinary.com/demo/image/upload/votre-voiture1.jpg" target="_blank">
-      <img src="https://res.cloudinary.com/demo/image/upload/votre-voiture1.jpg" alt="Voiture 1">
+<div class="container">
+  <div class="car">
+    <a href="LIEN_PHOTO_1" target="_blank">
+      <img src="LIEN_PHOTO_1">
     </a>
-    <div class="texte">
-      <h3>Toyota RAV4</h3>
-      <p>Année 2018 - Automatique - Essence</p>
-      <div class="prix">12 500 $</div>
-    </div>
-    <div class="clique">Clique sur la photo pour agrandir</div>
+    <h2>Toyota Corolla</h2>
+    <p>Prix : 8 500 $</p>
   </div>
-
-  <!-- VOITURE 2 -->
-  <div class="carte">
-    <a href="https://res.cloudinary.com/demo/image/upload/votre-voiture2.jpg" target="_blank">
-      <img src="https://res.cloudinary.com/demo/image/upload/votre-voiture2.jpg" alt="Voiture 2">
+  <div class="car">
+    <a href="LIEN_PHOTO_2" target="_blank">
+      <img src="LIEN_PHOTO_2">
     </a>
-    <div class="texte">
-      <h3>Toyota Land Cruiser</h3>
-      <p>Année 2016 - 4x4 - Diesel</p>
-      <div class="prix">28 000 $</div>
-    </div>
-    <div class="clique">Clique sur la photo pour agrandir</div>
+    <h2>Toyota RAV4</h2>
+    <p>Prix : 12 000 $</p>
   </div>
-
-  <!-- VOITURE 3 -->
-  <div class="carte">
-    <a href="https://res.cloudinary.com/demo/image/upload/votre-voiture3.jpg" target="_blank">
-      <img src="https://res.cloudinary.com/demo/image/upload/votre-voiture3.jpg" alt="Voiture 3">
+  <div class="car">
+    <a href="LIEN_PHOTO_3" target="_blank">
+      <img src="LIEN_PHOTO_3">
     </a>
-    <div class="texte">
-      <h3>Toyota Corolla</h3>
-      <p>Année 2019 - Automatique - Essence</p>
-      <div class="prix">9 800 $</div>
-    </div>
-    <div class="clique">Clique sur la photo pour agrandir</div>
+    <h2>Range Rover</h2>
+    <p>Prix : 25 000 $</p>
   </div>
-
-  <!-- VOITURE 4 -->
-  <div class="carte">
-    <a href="https://res.cloudinary.com/demo/image/upload/votre-voiture4.jpg" target="_blank">
-      <img src="https://res.cloudinary.com/demo/image/upload/votre-voiture4.jpg" alt="Voiture 4">
-    </a>
-    <div class="texte">
-      <h3>Hyundai Tucson</h3>
-      <p>Année 2017 - Automatique - Essence</p>
-      <div class="prix">11 200 $</div>
-    </div>
-    <div class="clique">Clique sur la photo pour agrandir</div>
-  </div>
-
-  <!-- VOITURE 5 -->
-  <div class="carte">
-    <a href="https://res.cloudinary.com/demo/image/upload/votre-voiture5.jpg" target="_blank">
-      <img src="https://res.cloudinary.com/demo/image/upload/votre-voiture5.jpg" alt="Voiture 5">
-    </a>
-    <div class="texte">
-      <h3>Mercedes C-Class</h3>
-      <p>Année 2018 - Automatique - Essence</p>
-      <div class="prix">18 500 $</div>
-    </div>
-    <div class="clique">Clique sur la photo pour agrandir</div>
-  </div>
-
-  <!-- VOITURE 6 -->
-  <div class="carte">
-    <a href="https://res.cloudinary.com/demo/image/upload/votre-voiture6.jpg" target="_blank">
-      <img src="https://res.cloudinary.com/demo/image/upload/votre-voiture6.jpg" alt="Voiture 6">
-    </a>
-    <div class="texte">
-      <h3>Nissan Patrol</h3>
-      <p>Année 2015 - 4x4 - Diesel</p>
-      <div class="prix">22 000 $</div>
-    </div>
-    <div class="clique">Clique sur la photo pour agrandir</div>
-  </div>
-
 </div>
 
 <footer>
-  <h3>Contactez JULSON AUTO</h3>
-  <p>Goma, Nord-Kivu - RDC</p>
-  <a class="btn" href="https://wa.me/243000000000">WhatsApp</a>
-  <p style="margin-top:15px;font-size:13px;color:#aaa">© 2026 Julson Auto</p>
+<p>Contact WhatsApp : +243 97X XXX XXX | Butembo - RDC</p>
+<p>© 2026 JULSON AUTO</p>
 </footer>
+
+<div id="myModal" class="modal" onclick="closeModal()">
+  <span class="close-btn">×</span>
+  <img id="modalImg">
+</div>
+<script>
+function openModal(img) {
+  document.getElementById('myModal').style.display = 'flex';
+  document.getElementById('modalImg').src = img.src;
+}
+function closeModal() {
+  document.getElementById('myModal').style.display = 'none';
+}
+</script>
 
 </body>
 </html>
