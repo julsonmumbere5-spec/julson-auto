@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JULSON AUTO - Vente Voitures Butembo</title>
+<style>
+body { font-family: Arial; margin: 0; background: #f2f2f2; }
+header { background: #000; color: white; text-align: center; padding: 40px 15px; border-bottom: 5px solid #ffcc00; }
+header h1 { color: #ffcc00; margin: 0; font-size: 40px; }
+.container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+.car { background: white; width: 320px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px #ccc; text-align: center; padding-bottom: 15px; }
+.car img { width: 100%; height: 200px; object-fit: cover; cursor: pointer; }
+.car h2 { margin: 10px 0 5px; }
+.car p { color: green; font-weight: bold; font-size: 18px; }
+footer { background: #000; color: white; text-align: center; padding: 20px; }
+/* Image agrandie */
+.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 999; justify-content: center; align-items: center; }
+.modal img { width: 90%; max-width: 800px; border-radius: 10px; }
+.close-btn { position: absolute; top: 15px; right: 25px; color: white; font-size: 45px; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<header>
+<h1> JULSON AUTO</h1>
+<p>Vente de Voitures de Qualité à BUTEMBO - RDC</p>
+<p>Par MUMBERE VASWAGHA JULSON </p>
+</header>
+
+<div class="container">
+  <div class="car">
+    <img src="https://res.cloudinary.com/gmgqxzli/image/upload/v1794235808/IMG_620ab80e-bdf2-4e41-81e2-d3b2a6c00b79.jpg" onclick="openModal(this)">
+    <h2>Toyota Corolla</h2>
+    <p>Prix : 18 500 $</p>
+  </div>
+  <div class="car">
+    <img src="https://res.cloudinary.com/gmgqxzli/image/upload/v1794235422/IMG_1aab04a9-2fff-4ce5-b866-d0cfaac9c71c.jpg" onclick="openModal(this)">
+    <h2>ToyotaLandcruser</h2>
+    <p>Prix : 25 000 $</p>
+  </div>
+  <div class="car">
+    <img src="https://res.cloudinary.com/gmgqxzli/image/upload/v1794259589/Location-voiture-de-luxe-Marrakech-range-rover-sport.jpg" onclick="openModal(this)">
+    <h2>Range Rover</h2>
+    <p>Prix : 35 000 $</p>
+  </div>
+</div>
+
+<footer>
+<p>Contact WhatsApp : +243 970502749 | Butembo - RDC</p>
+<p>© 2026 JULSON AUTO</p>
+</footer>
+
+<div id="myModal" class="modal" onclick="closeModal()">
+  <span class="close-btn">×</span>
+  <img id="modalImg">
+</div>
+<script>
+function openModal(img) {
+  document.getElementById('myModal').style.display = 'flex';
+  document.getElementById('modalImg').src = img.src;
+}
+function closeModal() {
+  document.getElementById('myModal').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
